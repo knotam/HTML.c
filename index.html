@@ -5,9 +5,19 @@
     h1 {
       color: black;
       text-align: center;}
-    button{
+    .outer{
+      position: absolute;
+      bottom: 2%;
+      left: 50%;
+      transform: translate(-50%, -50%);}
+    .inner{
+        text-align: center;
+    }
+
+    p {
+      margin: 25px;
+      color:white;
       text-align: center;
-      color: black;
     }
   </style>
     <meta charset="utf-8">
@@ -16,10 +26,15 @@
     <p style="word-wrap: break-word;text-align:center; color:black;"></p>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-  <body>
+  <body id="bodyEl">
   <script src="script.js"></script>
-  <p id = "Secret">Enter MrMagicPies Secret Area ;)</p>
-  <input type="password" id = "password" value = "Test">
-  <button onclick="test()">Submit!</button>
+  <hr class="dotted">
+  <div class = "outer">
+    <div class = "inner">
+      <p id = "Secret">Enter 100% Secret Area</p>
+      <input type="password" id = "password" value = "">
+      <button onclick="test()">Submit!</button>
+    </div>
+  </div>
   </body>
 </html>

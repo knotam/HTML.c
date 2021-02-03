@@ -1,5 +1,7 @@
-body {
+#bodyEl {
   animation: 5000ms ease-in-out infinite color-change;
+  background-color: teal;
+  animation-play-state: paused;
 }
 
 @keyframes color-change {
@@ -22,3 +24,4 @@ body {
     background-color: teal;
   }
 }
+
