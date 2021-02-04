@@ -23,5 +23,12 @@
   100% {
     background-color: teal;
   }
+
+
 }
 
+h1 {
+  position: relative;
+  color: white;
+  text-align: center;
+}
