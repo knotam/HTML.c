@@ -12,3 +12,13 @@ function test(){
 
     }
 }
+function themeSetter(){
+    const themeSetterText = document.getElementById("ThemeSetter1").value;
+    const themeController = document.getElementById("themeController");
+    if(themeSetterText =="colTheme") {
+        themeController.href = "./assets/theme1.css";
+    }
+    if(themeSetterText =="colTheme1") {
+        themeController.href = "./assets/style.css";
+    }
+}
