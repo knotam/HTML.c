@@ -1,6 +1,6 @@
 #bodyEl {
+  height: 100%;
   animation: 5000ms ease-in-out infinite color-change;
-  background-color: teal;
   animation-play-state: paused;
 }
 

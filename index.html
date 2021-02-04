@@ -1,18 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html id="bodyEl" style="background: linear-gradient(180deg, rgba(24,37,56,1) 0%, rgba(23,36,55,1) 38%, rgba(24,44,74,1) 100%);
+">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="MrMagicPie's Club" content="Come visit MrMagicPie's club!">
+  <meta http-equiv="content-language" content="en-us">
   <head>
   <style>
+    body {
+
+    }
     h1 {
-      color: black;
+      color: white;
       text-align: center;}
     .outer{
+      color: white;
+      text-align: center;
       position: absolute;
-      bottom: 2%;
+      bottom: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);}
-    .inner{
-        text-align: center;
+      width: 400px;
+      padding: 20px;
+      border-radius: 10px;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, .5);
+      box-sizing: border-box;
+      box-shadow: 0 15px 25px rgba(0, 0, 0, .6);}
+    .outer h2 {
+      margin: 0 0 30px;
+      text-align: center;
+      color: white;
+      padding: 0;
     }
+    .inner {
+      text-align: center;}
+    .inner button{
+      width: 25%;
+      padding: 5px;
+      border-radius: 5px;
+      margin: 0 0 1px;
+      border: transparent;
+      background: grey;
+      cursor: pointer;
+    }
+    .inner button:active{
+      margin: 0 0 0px;
+      border: transparent;
+      background: white;
+      cursor: pointer;
+    }
+    .inner input{
+      border: white;
+      color: white;
+      width: 100%;
+      outline: white;
+      font-size: 16px;
+      background: transparent;
+      padding: 5px;
+      border-bottom: 1px solid #ffff;
+    }
+    .inner p{
+      margin: 10px;
+    }
+
+
+
+
 
     p {
       margin: 25px;
@@ -20,19 +73,19 @@
       text-align: center;
     }
   </style>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <title>MrMagicPie's Club - Join the private (joke) club of MrMagicPie!</title>
     <h1>MrMagicPie's Club</h1>
     <p style="word-wrap: break-word;text-align:center; color:black;"></p>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-  <body id="bodyEl">
+  <body>
   <script src="script.js"></script>
   <hr class="dotted">
   <div class = "outer">
+    <h2 id = "Secret">Enter MrMagicPie's Secret Area</h2>
     <div class = "inner">
-      <p id = "Secret">Enter 100% Secret Area</p>
-      <input type="password" id = "password" value = "">
+      <input type="password" id = "password" placeholder="Super Secret Password">
+      <p id = "incPass" style="color: red; font-size: 15px;"></p>
       <button onclick="test()">Submit!</button>
     </div>
   </div>
